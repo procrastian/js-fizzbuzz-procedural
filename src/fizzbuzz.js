@@ -10,13 +10,25 @@ const answer = []
 
 // Write your code below this line
 
-for (i = 0; i <= 15; i++) {
+for (i = 1; i <= 15; i++) {
   // fizzbuzz for multiple of 3 and 5
-  // if (i = math. )
-  answer.push(i)
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+    answer.push('FizzBuzz')
+  }
+  // fizz for multiple of 3
+  else if (i % 3 === 0) {
+    answer.push('Fizz')
+  }
+  // buzz for multiple of 5
+  else if (i % 5 ===0 ) {
+  answer.push('Buzz')
+  }
+  else {
+    answer.push(i)
+  }
 }
-// fizz for multiple of 3
-// buzz for multiple of 5
+
 console.log(answer)
+
 // Don't touch the code below this line, we'll cover it later
 module.exports = answer
